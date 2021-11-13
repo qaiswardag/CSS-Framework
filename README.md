@@ -8,10 +8,9 @@
 
 Easy, simple and powerful front-end framework.
 
+```
 <a href="https://qaiswardag.github.io/css-framework/" target="_blank">Demo</a>
-
-<a href="www.squarespace.com" target="_blank">Squarespace</a>
-
+```
 
 ## Technologies
 
