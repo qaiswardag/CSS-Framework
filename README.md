@@ -8,9 +8,7 @@
 
 Easy, simple and powerful front-end framework.
 
-<a href="https://qaiswardag.github.io/css-framework/" target="_blank">Demo</a>
-
-[Google](https://google.com){:rel=“nofollow”}
+[Demo](https://qaiswardag.github.io/css-framework/)
 
 
 
