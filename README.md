@@ -6,7 +6,7 @@
 
 ## General info
 
-Easy, fast, and powerful front-end framework.
+Easy, simple and powerful front-end framework.
 
 ## Technologies
 
