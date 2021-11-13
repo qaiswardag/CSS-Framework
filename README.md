@@ -6,7 +6,7 @@
 
 ## General info
 
-Easy, simple and powerful front-end framework.
+Easy, simple and powerful front-end CSS Library.
 
 [Demo](https://qaiswardag.github.io/css-framework/)
 
