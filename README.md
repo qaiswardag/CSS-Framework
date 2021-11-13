@@ -7,6 +7,8 @@
 ## General info
 
 Easy, simple and powerful front-end framework.
+<a href="https://qaiswardag.github.io/css-framework/" target="_blank">Demo</a>
+
 
 ## Technologies
 
