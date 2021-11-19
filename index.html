@@ -9,7 +9,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="./css/style.css">
 
@@ -18,113 +18,119 @@
 
 <body>
 
-
-	<header class="main-header">
-		<h1>CSS Fundamentals</h1>
-		<nav>
-			<a href="#">Headers</a>
-			<a href="#">Class and ID Selectors</a>
-			<a href="#">Footer</a>
-		</nav>
-	</header>
-	<hr>
-
-	<h2 class="section">Styling Text</h2>
-	<hr>
-
-	<h2>Headers</h2>
-	<h1>Header one</h1>
-	<h1>Header two</h1>
-	<h1>Header three</h1>
-	<h1>Header four</h1>
-	<h1>Header five</h1>
-	<h1>Header six</h1>
-	<hr>
-
-
-	<h2 class="section">
-		Class and ID Selectors<br>
-		<span class="bi-text">CSS convention separate words by using dashes</span>
-	</h2>
-	<hr>
-
-	<h2>Paragraph</h2>
-	<p id="author">Author B.B</p>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia necessitatibus eveniet natus maiores,
-		reprehenderit sunt eius corrupti vitae expedita, laudantium dolores repellendus incidunt. At inventore velit
-		quis ea consequatur esse assumenda omnis numquam sint amet impedit explicabo nam autem dolore voluptas vel
-		sequi, earum reprehenderit.
-		<br><br>
-		Dolor vero obcaecati error nostrum quae nulla iste vitae reprehenderit deserunt
-		tempora, recusandae sapiente pariatur necessitatibus alias in rem nihil est eaque assumenda dicta officiis!
-		Nobis deserunt temporibus odit consectetur porro ad quisquam assumenda accusantium dolorem amet quod,
-		laboriosam, ea eligendi inventore iusto magnam quae molestias asperiores dolores. Amet minus adipisci magni ea
-		quae.
-	</p>
-	<hr>
-
-
-
-
-	<h2>The Unordered List element</h2>
-	<ul>
-		<li>Milk</li>
-		<li>Cheese
-			<ul>
-				<li>Blue cheese</li>
-				<li>Feta</li>
+	<header class="header">
+		<a class="logo" href="#">
+			CSS Fundamentals
+		</a>
+		<nav class="main-nav">
+			<ul class="main-nav-list">
+				<li><a class="main-nav-link" href="index.html">Home</a></li>
+				<li><a class="main-nav-link" href="./sidebar.html">Sidebar</a></li>
 			</ul>
-		</li>
-		<li>Yogurt</li>
-		<li>Skyr</li>
-	</ul>
-	<hr>
+		</nav>
+
+	</header>
 
 
-	<aside>
-		<h2>Most Popular</h2>
-		<ul class="related">
-			<li>
-				<header>
-					<h3>Corrupti Vitae</h3>
-					<p class="related-author">Author W.S</p>
-				</header>
-				<p>Consectetur, adipisicing elit. Quia necessitatibus eveniet natus maiores,
-					reprehenderit sunt eius corrupti vitae expedita, laudantium dolores repellendus incidunt. At
-					inventore
-					velit
-					quis ea consequatur esse assumenda omnis numquam sint amet impedit explicabo nam autem dolore
-					voluptas
-					vel
-					sequi, earum reprehenderit.
+	<main>
+		<section class="section-hero">
+			<div class="hero">
+				<h2>Section hero</h2>
+			</div>
+		</section>
+
+
+		<section class="section-featured">
+			<div class="container">
+				<hr>
+				<h2>Section featured</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus, aspernatur nemo error
+					fugiat
+					explicabo ab nesciunt quasi enim voluptatem nihil minima voluptates dolore nobis obcaecati
+					blanditiis
+					eveniet.</p>
+				<hr>
+			</div>
+		</section>
+
+
+		<section class="section-content">
+			<!-- <section class="section-content-body"> -->
+			<div class="container">
+
+
+				<h2>CSS Styles</h2>
+				<hr>
+
+				<h2>Inline boxes</h2>
+				<p>The Box-model applies in a different way</p>
+				<p>Heights and widths do not apply</p>
+				<p>Paddings and margins are applied only left and right</p>
+				<p>display: inline</p>
+				<hr>
+
+
+				<h2>Block boxes</h2>
+				<p>The box-model applies</p>
+				<p>display: block</p>
+				<hr>
+
+				<h2>Text</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis natus, numquam cum
+					assumenda
+					quasi
+					reiciendis commodi! Maiores unde ea itaque repellendus, ipsum molestias laboriosam sunt saepe sint
+					quod
+					tenetur nulla, voluptas perferendis, rerum distinctio aut suscipit labore magni doloribus.
 				</p>
-			</li>
 
-			<li>
-				<header>
-					<h3>Sint met</h3>
-					<p class="related-author">Author W.S</p>
-				</header>
-				<p>Adipisicing elit. Quia necessitatibus eveniet natus maiores,
-					reprehenderit sunt eius corrupti vitae expedita, laudantium dolores repellendus incidunt. At
-					inventore
-					velit
-					quis ea consequatur esse assumenda omnis numquam sint amet impedit explicabo nam autem dolore
-					voluptas
-					vel
-					sequi, earum reprehenderit.
-				</p>
-			</li>
-		</ul>
-	</aside>
-	<hr>
+				<p>Nam assumenda officia exercitationem impedit repellat? Ipsum voluptatum itaque saepe sapiente.
+					Reprehenderit
+					vero culpa, aperiam ex soluta cumque, et ducimus eum, fugiat odit eligendi architecto! Nemo labore
+					aut
+					corporis corrupti commodi sequi ratione incidunt excepturi? Quaerat, repudiandae alias. Fugiat
+					impedit
+					odio.</p>
+				<hr>
 
 
+				<h2>Headers</h2>
+				<h1>Header one</h1>
+				<h2>Header two</h2>
+				<h3>Header three</h3>
+				<h4>Header four</h4>
+				<h5>Header five</h5>
+				<h6>Header six</h6>
+				<hr>
 
 
-	<footer>
-		<p id="copyright">&copy; CSS Library</p>
+				<h2>The Unordered List element</h2>
+				<ul>
+					<li>Milk</li>
+					<li>Cheese
+						<ul>
+							<li>Blue cheese</li>
+							<li>Feta</li>
+						</ul>
+					</li>
+					<li>Yogurt</li>
+					<li>Skyr</li>
+				</ul>
+				<hr>
+
+
+				<h2>Styling Hyperlinks</h2>
+				<a href="https://www.google.com" target="_blank">Google</a>
+				<hr>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p>&copy; CSS Library</p>
 	</footer>
+
 </body>
 
 </html>
