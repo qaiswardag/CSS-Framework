@@ -65,6 +65,10 @@ Medium: 11px
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   font-size: 100%; /*16px*/
 
