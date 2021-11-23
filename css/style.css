@@ -70,9 +70,12 @@ Medium: 11px
 }
 
 html {
-  font-size: 100%; /*16px*/
+  /* font-size: 10px; */
 
-  /* overflow-x: hidden; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
 
   /* Does NOT work on Safari */
   /* scroll-behavior: smooth; */
@@ -85,12 +88,11 @@ body {
   font-family: 'Jost', sans-serif;
   line-height: 1;
   font-weight: 400;
-  letter-spacing: 0.05rem;
-  color: #222;
+  color: #000;
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 h1,
@@ -99,58 +101,49 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 3rem 0 1.38rem;
+  margin: 3.2rem 0 3.2rem;
   font-family: 'Jost', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
 }
 
 h1 {
   margin-top: 0;
-  font-size: 3.052rem;
+  font-size: 7.594rem;
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: 5.063rem;
 }
 
 h3 {
-  font-size: 1.953rem;
+  font-size: 3.375rem;
 }
 
 h4 {
-  font-size: 1.563rem;
+  font-size: 2.25rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.6rem;
 }
+
 h6 {
   font-size: 1rem;
 }
 
+a,
+button,
+li,
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
 small,
 .text_small {
-  font-size: 0.8rem;
-}
-
-/**************************/
-/* GENERAL REUSABLE COMPONENTS */
-/**************************/
-
-.container {
-  /* 1140px */
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-hr {
-  background: black;
-  padding: 0;
-  height: 1px;
-  border: none;
-  margin: 80px 0;
+  font-size: 0.667rem;
 }
 
 /**************************/
@@ -158,12 +151,12 @@ hr {
 /**************************/
 
 .header {
-  background-color: #ffeeee;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6rem;
-  padding: 0 1rem;
+  height: 9.6rem;
+  padding: 0 4.8rem;
   position: relative;
 }
 
@@ -232,7 +225,7 @@ a:visited {
 }
 
 a:hover {
-  color: green;
+  color: #000;
 }
 
 a:active {
@@ -241,7 +234,90 @@ a:active {
 }
 
 /**************************/
-/* HERO */
+/* GENERAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* max-width: 120rem; */
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.2;
+  margin: 4rem;
+  color: #fff;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+hr {
+  background: #000;
+  padding: 0;
+  height: 1px;
+  border: none;
+  margin: 80px 0;
+}
+
+.margin-right-sm {
+  margin-right: 2rem !important;
+}
+
+section {
+  padding: 9.6rem 0;
+}
+
+/**************************/
+/* GRID REUSABLE */
+/**************************/
+
+.grid {
+  display: grid;
+  gap: 3.2rem;
+  row-gap: 3.2rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+/**************************/
+/* HERO SECTION */
 /**************************/
 
 .section-hero {
@@ -249,8 +325,7 @@ a:active {
   align-items: center;
   justify-content: center;
   background: #000;
-  height: 400px;
-  color: #fff;
+  padding: 9.6rem 0;
 }
 
 /**************************/
@@ -261,11 +336,13 @@ a:active {
 .btn:link,
 .btn:visited {
   display: inline-block;
+  background-color: #000;
+  color: #fff;
 
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   padding: 1.2rem 2.2rem;
+  text-align: center;
 
   /* Only necessary for .btn */
   border: none;
@@ -273,19 +350,46 @@ a:active {
   font-family: inherit;
 
   /* Put transition on original "state" */
-  /* transition: background-color 0s; */
-  transition: all 0s;
+  transition: all 0.2s;
 }
 
-.btn--full:link,
-.btn--full:visited {
-  background-color: #222;
+.btn,
+.btn:hover,
+.btn:active {
+  background-color: brown;
   color: #fff;
 }
 
-.btn--full:hover,
-.btn--full:active {
-  background-color: #222;
+/* Modifier */
+.btn--outline,
+.btn--outline:link {
+  box-shadow: inset 0 0 0 2px brown;
+  background-color: #fff;
+  color: #000;
+}
+
+/**************************/
+/* PRICING SECTION */
+/**************************/
+
+.section-pricing {
+  padding: 9.6rem 0;
+  word-break: break-word;
+}
+
+.pricing,
+.list {
+  border: 1px solid #000;
+  padding: 3.2rem 1.6rem 4.8rem 2.8rem;
+  overflow: hidden;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6 rem;
+  line-height: 2.6;
 }
 
 /**************************/
@@ -293,7 +397,7 @@ a:active {
 /**************************/
 
 .footer {
-  border-top: 1px solid #222;
+  border-top: 1px solid #000;
   padding: 1rem 1rem;
   margin-top: 80px;
 }

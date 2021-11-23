@@ -11,7 +11,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/queries.css">
 
 	<title>CSS Library</title>
 </head>
@@ -31,37 +34,17 @@
 
 	</header>
 
-
 	<main>
 		<section class="section-hero">
 			<div class="hero">
-				Section hero
+				<h1 class="heading-primary">Section hero</h1>
 			</div>
 		</section>
 
 
-		<section class="section-featured">
+
+		<section class="section">
 			<div class="container">
-
-				<h2>Section featured</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus, aspernatur nemo error
-					fugiat
-					explicabo ab nesciunt quasi enim voluptatem nihil minima voluptates dolore nobis obcaecati
-					blanditiis
-					eveniet.</p>
-
-			</div>
-		</section>
-
-
-		<section class="section-content">
-			<!-- <section class="section-content-body"> -->
-			<div class="container">
-
-
-				<h2>CSS Styles</h2>
-
-
 				<h2>Inline boxes</h2>
 				<ul>
 					<li>The Box-model applies in a different way</li>
@@ -69,35 +52,48 @@
 					<li>Paddings and margins are applied only left and right</li>
 					<li>display: inline</li>
 				</ul>
+			</div>
+		</section>
 
-
-
+		<section class="section">
+			<div class="container">
 				<h2>Block boxes</h2>
 				<ul>
 					<li>The box-model applies</li>
 					<li>display: block</li>
 				</ul>
+			</div>
+		</section>
 
 
+		<section class="section">
+			<div class="container">
 				<h2>Text</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis natus, numquam cum
 					assumenda
 					quasi
-					reiciendis commodi! Maiores unde ea itaque repellendus, ipsum molestias laboriosam sunt saepe sint
+					reiciendis commodi! Maiores unde ea itaque repellendus, ipsum molestias laboriosam sunt
+					saepe sint
 					quod
 					tenetur nulla, voluptas perferendis, rerum distinctio aut suscipit labore magni doloribus.
 				</p>
 
-				<p>Nam assumenda officia exercitationem impedit repellat? Ipsum voluptatum itaque saepe sapiente.
+				<p>Nam assumenda officia exercitationem impedit repellat? Ipsum voluptatum itaque saepe
+					sapiente.
 					Reprehenderit
-					vero culpa, aperiam ex soluta cumque, et ducimus eum, fugiat odit eligendi architecto! Nemo labore
+					vero culpa, aperiam ex soluta cumque, et ducimus eum, fugiat odit eligendi architecto! Nemo
+					labore
 					aut
-					corporis corrupti commodi sequi ratione incidunt excepturi? Quaerat, repudiandae alias. Fugiat
+					corporis corrupti commodi sequi ratione incidunt excepturi? Quaerat, repudiandae alias.
+					Fugiat
 					impedit
 					odio.</p>
+			</div>
+		</section>
 
 
-
+		<section class="section">
+			<div class="container">
 				<h2>Headers</h2>
 				<h1>Header one</h1>
 				<h2>Header two</h2>
@@ -105,30 +101,84 @@
 				<h4>Header four</h4>
 				<h5>Header five</h5>
 				<h6>Header six</h6>
+			</div>
+		</section>
 
 
-
+		<section class="section">
+			<div class="container">
 				<h2>The Unordered List element</h2>
 				<ul>
-					<li>Milk</li>
-					<li>Cheese
+					<li>Numquam</li>
+					<li>Aut
 						<ul>
-							<li>Blue cheese</li>
-							<li>Feta</li>
+							<li>Voluptatum</li>
+							<li>Molestias</li>
 						</ul>
 					</li>
-					<li>Yogurt</li>
-					<li>Skyr</li>
+					<li>Assumenda</li>
+					<li>Officia</li>
 				</ul>
+			</div>
+		</section>
 
 
-
+		<section class="section">
+			<div class="container">
 				<h2>Styling buttons</h2>
-				<a class="btn btn--full" href="#" target="_blank">Button</a>
+				<a class="btn margin-right-sm" href="#" target="_blank">Anchor Button</a>
+				<button class="btn btn--outline">Action Button</button>
+			</div>
+		</section>
+
+
+		<section class="section">
+			<div class="container">
 
 				<h2>Styling Hyperlinks</h2>
 				<a href="https://www.google.com" target="_blank">Google</a>
 
+			</div>
+		</section>
+
+
+		<section class="section-pricing">
+			<div class="container">
+				<h2>Pricing</h2>
+			</div>
+			<div class="container grid grid--3-cols">
+				<div class="pricing">
+					<h3>Rerum sint quod</h3>
+					<p>Quod tenetur nulla, voluptas perferendis, rerum distinctio aut suscipit labore magni
+						doloribus.</p>
+
+					<h4>Laboriosam</h4>
+					<h4>Nulla</h4>
+					<h4>Icipit</h4>
+					<a class="btn margin-right-sm" href="#" target="_blank">Anchor Button</a>
+				</div>
+				<div class="pricing">
+					<h3>Rerum sint quod</h3>
+					<p>Reiciendis commodi Maiores unde ea itaque repellendus, ipsum molestias laboriosam.
+					</p>
+
+					<h4>Laboriosam</h4>
+					<h4>Nulla</h4>
+					<h4>Icipit</h4>
+					<a class="btn margin-right-sm" href="#" target="_blank">Anchor Button</a>
+				</div>
+				<div class="list">
+					<h3>Maiores commodi</h3>
+					<ul>
+						<li class="list-item"><span class="material-icons">done</span>ipsum</li>
+						<li class="list-item"><span class="material-icons">done</span>ipsum</li>
+						<li class="list-item"><span class="material-icons">done</span>ipsum</li>
+						<li class="list-item"><span class="material-icons">done</span>ipsum</li>
+						<li class="list-item"><span class="material-icons">done</span>ipsum</li>
+						<li class="list-item"><span class="material-icons">done</span>ipsum</li>
+						<li class="list-item"><span class="material-icons">done</span>ipsum</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
