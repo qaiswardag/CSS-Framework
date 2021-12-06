@@ -59,6 +59,8 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap'); */
+
 * {
   padding: 0;
   margin: 0;
@@ -341,15 +343,18 @@ section {
 }
 
 .grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid--center-v {
