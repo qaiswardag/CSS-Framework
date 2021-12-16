@@ -104,7 +104,6 @@ h4,
 h5,
 h6 {
   margin: 3.2rem 0 3.2rem;
-  font-family: 'Jost', sans-serif;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -137,10 +136,18 @@ h6 {
 a,
 button,
 li,
-p {
+p,
+label,
+input {
   font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 1.2px;
+}
+
+ul {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  padding-inline-start: 4rem;
 }
 
 small,
@@ -216,6 +223,9 @@ a:active {
   box-shadow: inset 0 0 0 2px brown;
   background-color: #fff;
   color: #000;
+}
+.btn--top-margin {
+  margin: 2rem 0 0 0;
 }
 
 /**************************/
@@ -389,12 +399,61 @@ section {
   overflow: hidden;
 }
 
+.list ul {
+  padding: 0;
+}
+
 .list-item {
-  font-size: 1.8rem;
   display: flex;
+  justify-content: left;
   align-items: center;
-  gap: 1.6 rem;
+  gap: 1.6rem;
   line-height: 2.6;
+  list-style: none;
+}
+
+/**************************/
+/* FORM */
+/**************************/
+
+form {
+  margin: 3rem auto;
+  text-align: left;
+  border-radius: 10px;
+}
+label {
+  color: #000;
+  display: inline-block;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 2rem 0 0 0;
+}
+input,
+select {
+  display: block;
+  padding: 2rem 0 1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+  font-family: inherit;
+}
+input[type='checkbox'] {
+  display: inline-block;
+  width: 1.6rem;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: 2px;
+}
+
+.error {
+  color: brown;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 /**************************/
