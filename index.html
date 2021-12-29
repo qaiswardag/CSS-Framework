@@ -23,11 +23,13 @@
 
 	<header class="header">
 		<a class="logo" href="#">
-			CSS Fundamentals
+			CSS Library
 		</a>
 		<nav class="main-nav">
 			<ul class="main-nav-list">
-				<li><a class="main-nav-link" href="index.html">Home</a></li>
+				<li><a class="main-nav-link nav-link-active" href="index.html">Home</a></li>
+				<li><a class="main-nav-link" href="index.html">Link</a></li>
+				<li><a class="main-nav-link" href="index.html">Link</a></li>
 			</ul>
 		</nav>
 
@@ -70,7 +72,8 @@
 				<h2>Text</h2>
 				<p>
 					Reiciendis commodi! Maiores unde ea itaque repellendus, ipsum molestias laboriosam sunt saepe sint
-					quod tenetur nulla, voluptas perferendis, rerum distinctio aut suscipit labore magni doloribus.
+					quod tenetur nulla, voluptas perferendis, rerum distinctio soluta aut itague suscipit labore magni
+					doloribus.
 				</p>
 				<p>
 					Nam assumenda officia exercitationem impedit repellat? Ipsum voluptatum itaque saepe sapiente.
@@ -141,8 +144,10 @@
 		<section class="section">
 			<div class="container">
 				<h2>Styling buttons</h2>
-				<a class="btn margin-right-sm" href="#" target="_blank">Anchor Button</a>
-				<button class="btn btn--outline">Action Button</button>
+				<a class="btn" href="#" target="_blank">Anchor Button</a>
+				<button class="btn">Button</button>
+				<button class="btn btn--outline">Button Outline</button>
+				<a class="btn btn--outline" href="#" target="_blank">Anchor Button Outline</a>
 			</div>
 		</section>
 
@@ -163,27 +168,29 @@
 			</div>
 			<div class="container grid grid--3-cols">
 				<div class="pricing">
-					<h3>Rerum sint quod</h3>
-					<p>Quod tenetur nulla, voluptas perferendis, rerum distinctio aut suscipit labore magni
-						doloribus.</p>
-
-					<h4>Laboriosam</h4>
-					<h4>Nulla</h4>
-					<h4>Icipit</h4>
-					<a class="btn margin-right-sm" href="#" target="_blank">Anchor Button</a>
-				</div>
-				<div class="pricing">
-					<h3>Rerum sint quod</h3>
-					<p>Reiciendis commodi Maiores unde ea itaque repellendus, ipsum molestias laboriosam perferendis.
+					<h3>Ierum sint quod</h3>
+					<p>
+						Seiciendis commodi Maiores unde ea itaque repellendus, ipsum molestias laboriosam perferendis.
 					</p>
 
 					<h4>Laboriosam</h4>
 					<h4>Nulla</h4>
 					<h4>Icipit</h4>
-					<a class="btn margin-right-sm" href="#" target="_blank">Anchor Button</a>
+					<a class="btn mt-2" href="#" target="_blank">Anchor Button</a>
+				</div>
+				<div class="pricing">
+					<h3>Rerum sint quod</h3>
+					<p>
+						Reiciendis commodi Maiores unde ea itaque repellendus, ipsum molestias laboriosam perferendis.
+					</p>
+
+					<h4>Laboriosam</h4>
+					<h4>Nulla</h4>
+					<h4>Icipit</h4>
+					<a class="btn mt-2" href="#" target="_blank">Anchor Button</a>
 				</div>
 				<div class="list">
-					<h3>Maiores commodi</h3>
+					<h3>Maiores comodi</h3>
 					<ul>
 						<li class="list-item"><span class="material-icons">done</span>Aperiam ex soluta</li>
 						<li class="list-item"><span class="material-icons">done</span>Aperiam ex soluta</li>
@@ -191,6 +198,8 @@
 						<li class="list-item"><span class="material-icons">done</span>Aperiam ex soluta</li>
 						<li class="list-item"><span class="material-icons">done</span>Aperiam ex soluta</li>
 						<li class="list-item"><span class="material-icons">done</span>Aperiam ex soluta</li>
+						<li class="list-item"><span class="material-icons">done</span>Aperiam ex soluta</li>
+						<button class="btn btn--outline mt-4">Action Button</button>
 					</ul>
 				</div>
 			</div>
@@ -212,12 +221,18 @@
 						<option value="developer">Web Developer</option>
 						<option value="designer">Web Designer</option>
 					</select>
+
+
+					<label>Description:</label>
+					<textarea></textarea>
+
+
 					<div class="terms">
 						<input type="checkbox" required>
 						<label>Accept terms and conditions</label>
 					</div>
 					<div class="submit">
-						<button class="btn btn--top-margin btn--display-block">Submit</button>
+						<button class="btn mt-4">Submit</button>
 					</div>
 				</form>
 			</div>
