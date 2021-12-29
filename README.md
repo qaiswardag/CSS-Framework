@@ -8,7 +8,7 @@
 
 Easy, simple and powerful front-end CSS Library.
 
-[Demo](https://qaiswardag.github.io/css-framework/)
+[Demo](https://qaiswardag.github.io/css-library/)
 
 ## Technologies
 
