@@ -12,8 +12,6 @@ Easy, simple and powerful front-end CSS Library.
 
 #
 
-test 3.1.2021
-
 ## Technologies
 
 Build with:
