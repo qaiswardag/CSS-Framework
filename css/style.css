@@ -65,6 +65,17 @@ Medium: 11px
 /* VARIABLES */
 /**************************/
 
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
 :root {
   --primary: #404040;
   --secondary: #40aadd;
