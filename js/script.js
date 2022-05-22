@@ -1,13 +1,7 @@
-console.log("Hello world!");
-
-const myName = "Jonas Schmedtmann";
 const h1 = document.querySelector(".heading-primary");
-console.log(myName);
 console.log(h1);
 
 // h1.addEventListener("click", function () {
-//   h1.textContent = myName;
-//   h1.style.backgroundColor = "red";
 //   h1.style.padding = "5rem";
 // });
 
